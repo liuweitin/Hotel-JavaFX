@@ -5,6 +5,6 @@ This project is based on the JAVAFX, which is first version of the hotel Applica
 
 If you have any questions, please email me.
 
-Email Address： waitingfirefly@gmai.com
+Email Address： waitingfirefly@gmail.com
 
 Wechat Account: liuweitin001

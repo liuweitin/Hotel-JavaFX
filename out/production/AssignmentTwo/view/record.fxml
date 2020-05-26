@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RecordController">
+   <children>
+      <Label layoutX="20.0" layoutY="10.0" prefHeight="20.0" prefWidth="300.0" text="RECORD_PAGE" />
+      <TextArea fx:id="textpage" layoutY="38.0" prefHeight="570.0" prefWidth="740.0" />
+      <Button layoutX="15.0" layoutY="620.0" mnemonicParsing="false" onAction="#output" text="OUTPUT" />
+      <Label layoutX="111.0" layoutY="621.0" prefHeight="25.0" prefWidth="96.0" text="SAVE_PATH :" />
+      <TextField fx:id="savePath" layoutX="217.0" layoutY="620.0" prefHeight="27.0" prefWidth="418.0" />
+   </children>
+</AnchorPane>

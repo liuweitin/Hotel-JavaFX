@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomListController">
+   <children>
+      <Label layoutX="20.0" layoutY="5.0" prefHeight="20.0" prefWidth="130.0" text="ROOMLIST_PAGE" />
+      <TableView fx:id="table" layoutY="30.0" prefHeight="635.0" prefWidth="740.0">
+        <columns>
+          <TableColumn fx:id="image" prefWidth="131.36365097761154" text="IMAGE" />
+          <TableColumn fx:id="roomId" prefWidth="78.52273559570312" text="ROOMID" />
+          <TableColumn fx:id="feature" minWidth="1.0" prefWidth="172.1591033935547" text="FEATURE" />
+          <TableColumn fx:id="numbeds" prefWidth="82.84088134765625" text="NUMBEDS" />
+          <TableColumn fx:id="roomType" prefWidth="91.0455322265625" text="TYPE" />
+          <TableColumn fx:id="roomStatus" prefWidth="74.9544677734375" text="STATUS" />
+          <TableColumn fx:id="function" prefWidth="112.0" text="FUNCTION" />
+        </columns>
+      </TableView>
+      <Button fx:id="search" layoutX="655.0" layoutY="1.0" mnemonicParsing="false" onAction="#findRooms" text="SEARCH" />
+   </children>
+</AnchorPane>

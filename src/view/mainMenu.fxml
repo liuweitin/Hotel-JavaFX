@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mianMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <top>
+      <AnchorPane prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" prefHeight="22.0" prefWidth="269.0" text="CityLodge Management System" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+         <items>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="110.0">
+               <children>
+                  <Accordion prefHeight="360.0" prefWidth="160.0">
+                    <panes>
+                      <TitledPane animated="false" prefHeight="360.0" text="Menu">
+                           <content>
+                              <VBox minHeight="800.0" prefHeight="360.0" prefWidth="0.0" spacing="10.0">
+                                 <children>
+                                    <Button fx:id="roomList" mnemonicParsing="false" onAction="#displayRoomList" style="-fx-pref-width: 160px; -fx-pref-height: 35px; -fx-background-insets: 0;" text="ROOM_LIST" />
+                                    <Button fx:id="addRoom" mnemonicParsing="false" onAction="#addRoom" style="-fx-pref-width: 160px; -fx-pref-height: 35px; -fx-background-insets: 0;" text="AddRoom" />
+                                    <Button fx:id="loadRoom" mnemonicParsing="false" onAction="#loadRoom" style="-fx-pref-width: 160px; -fx-pref-height: 35px; -fx-background-insets: 0;" text="LoadRoom" />
+                                    <Button fx:id="record" mnemonicParsing="false" onAction="#displayRecord" style="-fx-pref-width: 160px; -fx-pref-height: 35px; -fx-background-insets: 0;" text="Record" />
+                                    <Button fx:id="exit" mnemonicParsing="false" onAction="#systemExit" style="-fx-pref-width: 160px; -fx-pref-height: 35px; -fx-background-insets: 0;" text="EXIT" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+   
+               </AnchorPane>
+         </items>
+      </SplitPane>
+   </left>
+   <center>
+       
+      <!--<AnchorPane prefHeight="360.0" prefWidth="440.0" BorderPane.alignment="CENTER" />-->
+   </center>
+</BorderPane>

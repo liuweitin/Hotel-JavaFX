@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="660.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddRoomController">
+    <children>
+        <Label layoutX="20.0" layoutY="25.0" prefHeight="20.0" prefWidth="300.0" text="AddRoom_PAGE" />
+      <TextField fx:id="roomId" layoutX="130.0" layoutY="60.0" />
+      <TextField fx:id="roomType" layoutX="129.0" layoutY="100.0" />
+      <TextField fx:id="feature" layoutX="130.0" layoutY="180.0" />
+      <TextField fx:id="numBeds" layoutX="130.0" layoutY="140.0" />
+      <TextField fx:id="image" layoutX="130.0" layoutY="220.0" prefHeight="27.0" prefWidth="410.0" />
+      <Label layoutX="20.0" layoutY="145.0" text="Number Of Beds" />
+      <Label layoutX="20.0" layoutY="185.0" text="Feature" />
+      <Label layoutX="20.0" layoutY="105.0" text="RoomType" />
+      <Label layoutX="20.0" layoutY="65.0" prefHeight="17.0" prefWidth="66.0" text="Room_ID" />
+      <Label layoutX="20.0" layoutY="225.0" text="Image" />
+      <Button fx:id="confirm" layoutX="100.0" layoutY="310.0" mnemonicParsing="false" onAction="#submitRoom" text="CONFIRM" />
+      <Label fx:id="information" layoutX="20.0" layoutY="265.0" prefHeight="20.0" prefWidth="385.0" />
+      <Label layoutX="310.0" layoutY="105.0" prefHeight="17.0" prefWidth="115.0" text="Suite or Standard" />
+      <Label layoutX="310.0" layoutY="135.0" prefHeight="17.0" prefWidth="115.0" text="Standard:1,2,4." />
+      <Label layoutX="310.0" layoutY="150.0" prefHeight="17.0" prefWidth="115.0" text="Suite:6." />
+      <Button fx:id="chooseP" layoutX="569.0" layoutY="220.0" mnemonicParsing="false" onAction="#choosePicture" prefHeight="27.0" prefWidth="115.0" text="choose picture" />
+
+    </children>
+</AnchorPane>
